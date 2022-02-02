@@ -5,3 +5,7 @@
 .heart {
     border-radius:48% 52% 50% 50% / 23% 24% 76% 77%;
 }
+
+*{
+    scroll-behavior: smooth;
+}

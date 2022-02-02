@@ -18,11 +18,9 @@
 </head>
 
 <body class="bg-[#1A1A40] font-poppins text-[#EEEEEE]">
-    <div class="snap-y snap-mandatory">
-        <div class="snap-start">
             <header x-data="{isOpen: false}" class="fixed">
                 <div class="container flex justify-between m-auto snap-start">
-                    <div class=" m-5 font-semibold px-4 ">
+                    <div class="font-semibold px-4 ">
                         Manzoor
                     </div>
                     <div class="sm:hidden text-3xl p-2 fixed w-full flex justify-end self-center duration-500"
@@ -31,10 +29,10 @@
                     </div>
                 </div>
 
-                <div class="sm:block lg:block flex fixed w-full mt-5 ">
+                <div class="transition duration-700 ease-in-out sm:block lg:block flex fixed w-full mt-5 ">
                     <ul class="space-x-5 flex flex-col items-end space-y-5 justify-end
             p-2 absolute w-full" x-show="isOpen" @click.away="isOpen=false">
-                        <li class="bg-gray-500 rounded-2xl p-2 hover:bg-gray-700"><a href="#"
+                        <li class="bg-gray-500 rounded-2xl p-2 hover:bg-gray-700 "><a href="#"
                                 class="cursor-pointer animate-bounce">Home</a></li>
                         <li class="bg-gray-500 rounded-2xl p-2 hover:bg-gray-700"><a href="#about"
                                 class="cursor-pointer">About</a></li>
@@ -48,19 +46,20 @@
                 </div>
             </header>
         </div>
-        <div class="snap-start">
+        <div class="snap-y snap-mandatory">
+            <div class="snap-start">
             <div class="container flex py-8 justify-center space-x-5 m-auto p-10">
 
-                <div class="flex flex-col space-y-2 mt-10 text-2xl">
+                <div class="flex flex-col space-y-2 mt-10 text-2xl transition duration-700 ease-in-out">
                     <ul>
-                        <li><a href="https://www.linkedin.com/in/manzoor-chopan-074b14201/"><i class="uim uim-linkedin-alt"></i></a></li>
-                        <li><a href="https://github.com/mchopan"><i class="uim uim-github-alt"></i></a></li>
-                        <li><a href="https://www.instagram.com/mchopan88"><i class="uim uim-instagram-alt"></i></a></li>
-                        <li><a href="https://www.youtube.com/channel/UC6fUeU5HI4O7m_sHFrmG0pg/featured"><i class="uim uim-youtube"></i></a></li>
+                        <li class=""><a href="https://www.linkedin.com/in/manzoor-chopan-074b14201/"><i class="uim uim-linkedin-alt"></i></a></li>
+                        <li class=""><a href="https://github.com/mchopan"><i class="uim uim-github-alt"></i></a></li>
+                        <li class=""><a href="https://www.instagram.com/mchopan88"><i class="uim uim-instagram-alt"></i></a></li>
+                        <li class=""><a href="https://www.youtube.com/channel/UC6fUeU5HI4O7m_sHFrmG0pg/featured"><i class="uim uim-youtube"></i></a></li>
                     </ul>
                 </div>
                 <div class="container flex justify-center overflow-hidden w-45 h-45 bg-[#7900FF] heart m-auto">
-                    <img src="img/perfil.png    " alt="" class="m-auto justify-center">
+                    <img src="img/perfil.png" alt="" class="m-auto justify-center">
                 </div>
 
             </div>
@@ -68,16 +67,17 @@
             <div class="container flex text-center justify-center space-x-5 m-auto">
                 <div class="self-center mx-2.5">
                     <div class="">
-                        Hello Stranger it's ok you can scroll
+                        Hi, I am Manzoor
+                        i am designer
                     </div>
                     <div class="flex justify-between">
                         <div
                             class=" mt-4 border-2 flex justify-center m-auto border-cyan-500 w-20 h-10 bg-green-500 rounded-xl hover:bg-green-800 p-2">
-                            <button class="text-justify">Hire Me</button>
+                            <a href="#hire"><button class="text-justify">Hire Me</button></a>
                         </div>
                         <div
                             class="mt-4 border-2 flex justify-center m-auto border-cyan-500 w-20 h-10 bg-green-500 rounded-xl hover:bg-green-800 p-2">
-                            <button class="text-justify">Resume</button>
+                            <a href="pdf/MAnzoor_Cv.pdf" download="pdf/MAnzoor_Cv.pdf"><button class="text-justify">Resume</button></a>
                         </div>
                     </div>
                 </div>
