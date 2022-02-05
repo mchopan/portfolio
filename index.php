@@ -1,19 +1,23 @@
 
 <?php
 
-    $name = $_POST['name'];
-    $email = $_POST['email'];
-    $message = $_POST['message'];
+if (isset($_POST['submit'])) 
+    {
 
-    $to = "mchopan21@gmail.com";
-    $subject = "Mail From Portfolio";
-    $txt = "Name = " .$name ."\r\n Email = " .$email ."\r\n Message = " .$message;
-    $header = "From : noreply@mchopan.github.io/portfolio" . "\r\n";
+        $name = $_POST['name'];
+        $email = $_POST['email'];
+        $message = $_POST['message'];
 
-    if($email != NULL){
-        mail($to,$subject,$txt,$header);
-    }
+        $to = "mchopan21@gmail.com";
+        $subject = "Mail From Portfolio";
+        $txt = "Name = " . $name . "\r\n Email = " . $email . "\r\n Message = " . $message;
+        $headers = "From : " .$email;
 
+        if ($email != NULL) {
+            mail($to, $subject, $txt, $headers);
+            header("Location: index.php?mailSend");
+        };
+    };
 
 ?>
 
