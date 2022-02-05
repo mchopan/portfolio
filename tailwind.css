@@ -665,6 +665,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 10rem;
 }
 
+.w-\[80\%\] {
+  width: 80%;
+}
+
+.w-\[90\%\] {
+  width: 90%;
+}
+
 .flex-1 {
   flex: 1 1 0%;
 }
@@ -759,6 +767,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .snap-start {
   scroll-snap-align: start;
+}
+
+.flex-row {
+  flex-direction: row;
 }
 
 .flex-col {
@@ -972,6 +984,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-black {
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
+.bg-slate-800 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(30 41 59 / var(--tw-bg-opacity));
 }
 
 .p-2 {
