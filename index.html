@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#1A1A40"/>
+    <meta name="theme-color" content="#1A1A40" />
 
     <script src="//unpkg.com/alpinejs" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -20,89 +20,95 @@
 </head>
 
 <body class="bg-[#1A1A40] font-poppins text-[#EEEEEE]">
-            <header x-data="{isOpen: false}" class="fixed">
-                <div class="container flex justify-between m-auto snap-start">
-                    <div class="font-semibold px-4 ">
-                        M-chopan
-                    </div>
-                    <div class="sm:hidden text-3xl p-2 fixed w-full flex justify-end self-center duration-500"
-                        @click="isOpen = !isOpen">
-                        <i class="uim uim-bars flex justify-end"></i>
-                    </div>
-                </div>
-
-                <div class="transition duration-700 ease-in-out sm:block lg:block flex fixed w-full mt-5 ">
-                    <ul class="space-x-5 flex flex-col items-end space-y-5 justify-end
-            p-2 absolute w-full" x-show="isOpen" @click.away="isOpen=false">
-                        <li class="bg-gray-500 rounded-2xl p-2 hover:bg-gray-700 "><a href="#"
-                                class="cursor-pointer animate-bounce">Home</a></li>
-                        <li class="bg-gray-500 rounded-2xl p-2 hover:bg-gray-700"><a href="#about"
-                                class="cursor-pointer">About</a></li>
-                        <li class="bg-gray-500 rounded-2xl p-2 hover:bg-gray-700"><a href="#work"
-                                class="cursor-pointer">My Work</a></li>
-                        <li class="bg-gray-500 rounded-2xl p-2 hover:bg-gray-700"><a href="#skills"
-                                class="cursor-pointer">Skills</a></li>
-                        <li class="bg-gray-500 rounded-2xl p-2 hover:bg-gray-700"><a href="#hire"
-                                class="cursor-pointer">Hire Me</a></li>
-                    </ul>
-                </div>
-            </header>
+    <header x-data="{isOpen: false}" class="fixed">
+        <div class="container flex justify-between m-auto snap-start">
+            <div class="font-semibold px-4 ">
+                M-chopan
+            </div>
+            <div class="sm:hidden text-3xl p-2 fixed w-full flex justify-end self-center duration-500"
+                @click="isOpen = !isOpen">
+                <i class="uim uim-bars flex justify-end"></i>
+            </div>
         </div>
-        <div class="snap-y snap-mandatory">
-            <div class="snap-start">
+
+        <div class="transition duration-700 ease-in-out sm:block lg:block flex fixed w-full mt-5 ">
+            <ul class="space-x-5 flex flex-col items-end space-y-5 justify-end
+            p-2 absolute w-full" x-show="isOpen" @click.away="isOpen=false">
+                <li class="bg-gray-500 rounded-2xl p-2 hover:bg-gray-700 "><a href="#"
+                        class="cursor-pointer animate-bounce">Home</a></li>
+                <li class="bg-gray-500 rounded-2xl p-2 hover:bg-gray-700"><a href="#about"
+                        class="cursor-pointer">About</a></li>
+                <li class="bg-gray-500 rounded-2xl p-2 hover:bg-gray-700"><a href="#work" class="cursor-pointer">My
+                        Work</a></li>
+                <li class="bg-gray-500 rounded-2xl p-2 hover:bg-gray-700"><a href="#skills"
+                        class="cursor-pointer">Skills</a></li>
+                <li class="bg-gray-500 rounded-2xl p-2 hover:bg-gray-700"><a href="#hire" class="cursor-pointer">Hire
+                        Me</a></li>
+            </ul>
+        </div>
+    </header>
+    </div>
+    <div class="snap-y snap-mandatory">
+        <div class="snap-start lg:flex">
             <div class="container flex py-8 justify-center space-x-5 m-auto p-10">
 
-                <div class="flex flex-col space-y-2 mt-10 text-2xl transition duration-700 ease-in-out">
+                <div
+                    class="flex flex-col space-y-2 mt-20 text-2xl transition duration-700 ease-in-out lg:text-3xl lg:p-10 lg:mt-20">
                     <ul>
-                        <li class=""><a href="https://www.linkedin.com/in/manzoor-chopan-074b14201/"><i class="uim uim-linkedin-alt"></i></a></li>
+                        <li class=""><a href="https://www.linkedin.com/in/manzoor-chopan-074b14201/"><i
+                                    class="uim uim-linkedin-alt"></i></a></li>
                         <li class=""><a href="https://github.com/mchopan"><i class="uim uim-github-alt"></i></a></li>
-                        <li class=""><a href="https://www.instagram.com/mchopan88"><i class="uim uim-instagram-alt"></i></a></li>
-                        <li class=""><a href="https://www.youtube.com/channel/UC6fUeU5HI4O7m_sHFrmG0pg/featured"><i class="uim uim-youtube"></i></a></li>
+                        <li class=""><a href="https://www.instagram.com/mchopan88"><i
+                                    class="uim uim-instagram-alt"></i></a></li>
+                        <li class=""><a href="https://www.youtube.com/channel/UC6fUeU5HI4O7m_sHFrmG0pg/featured"><i
+                                    class="uim uim-youtube"></i></a></li>
                     </ul>
                 </div>
-                <div class="container flex justify-center overflow-hidden w-45 h-45 bg-[#7900FF] heart m-auto">
+                <div class="container flex justify-center overflow-hidden w-45 h-45 bg-[#7900FF] heart m-auto md:ml-96">
                     <img src="img/perfil.png" alt="" class="m-auto justify-center">
                 </div>
 
             </div>
 
-            <div class="container flex text-center justify-center space-x-5 m-auto">
-                <div class="self-center mx-2.5">
+            <div class="container flex text-center justify-center space-x-5 m-auto lg:text-4xl lg:p-10 lg:m-10">
+                <div class="self-center mx-2.5 lg:">
                     <div class="">
                         Hi, I am Manzoor Chopan </br>
                         I am Designer
                     </div>
-                    <div class="flex justify-between">
+                    <div class="flex justify-between lg:text-sm lg:mt-20">
                         <div
                             class=" mt-4 border-2 flex justify-center m-auto border-cyan-500 w-20 h-10 bg-green-500 rounded-xl hover:bg-green-800 p-2">
                             <a href="#hire"><button class="text-justify">Hire Me</button></a>
                         </div>
                         <div
                             class="mt-4 border-2 flex justify-center m-auto border-cyan-500 w-20 h-10 bg-green-500 rounded-xl hover:bg-green-800 p-2">
-                            <a href="pdf/MAnzoor_Cv.pdf" download="pdf/MAnzoor_Cv.pdf"><button class="text-justify">Resume</button></a>
+                            <a href="pdf/MAnzoor_Cv.pdf" download="pdf/MAnzoor_Cv.pdf"><button
+                                    class="text-justify">Resume</button></a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="snap-start">
-            <div class="flex justify-center pt-10 font-semibold" id="about">
-                <div>About Me </div>
-            </div>
 
-            <div class="py-10 flex space-x-5 p-10 ">
+        <div class="flex justify-center pt-10 font-semibold" id="about">
+            <div>About Me </div>
+        </div>
+        <div class="snap-start md:flex lg:flex">
+            <div class="py-10 flex space-x-5 p-10">
                 <div class=""><img src="img/about.jpg" alt="" class="rounded-3xl"></div>
             </div>
 
             <div>
-                <div class="p-5 text-center text-xl">“A designer knows he has achieved perfection not when there is
+                <div class="p-5 text-center text-xl  lg:mt-40">“A designer knows he has achieved perfection not when
+                    there is
                     nothing left
                     to add, but
                     when there is nothing left to take away”
                 </div>
 
-                <div class="flex justify-around py-3 font-bold text-2xl text-center">
+                <div class="flex justify-around py-3 font-bold text-2xl text-center md:mt-20 lg:mt-20">
                     <h1>04+<p class="text-xs font-thin flex-wrap">Years<br> Experence</p>
                     </h1>
                     <h1>30+ <p class="text-xs font-thin">Completed<br>Projects</p>
@@ -110,32 +116,53 @@
                 </div>
             </div>
         </div>
-        <div class="snap-start">
-            <div class="flex justify-center pt-10 font-semibold" id="work">
-                <div>My Work</div>
-            </div>
 
+        <div class="flex justify-center pt-10 font-semibold" id="work">
+            <div>My Work</div>
+        </div>
+        <div class="snap-start">
             <div class="p-5 space-y-5">
                 <h1 class="mx-5">Websites</h1>
-                <div class="flex justify-center m-auto">
+                <div class="flex justify-center m-auto md:flex md:justify-start lg:flex lg:justify-start">
                     <a href="https://mchopan.github.io/oxfordskill.in/">
-                        <img src="img/Capture.JPG" alt="" class="rounded-3xl">
+                        <img src="img/Capture.JPG" alt="" class="rounded-3xl md:hidden lg:hidden">
+                    </a>
+                    <a href="https://mchopan.github.io/oxfordskill.in/">
+                        <img src="img/Capture2.JPG" alt="" class="rounded-3xl h-96 hidden md:block lg:block">
                     </a>
                 </div>
-
-                <div class="pt-5 space-y-5">
-                    <h1 class="mx-5 ">3D Designs</h1>
+                <h1 class="mx-5 ">3D Designs</h1>
+                <div class="pt-5 space-y-5 md:flex md:space-x-10 md:m-auto md:h-96 lg:flex lg:space-x-10 lg:m-auto lg:h-96">
                     <img src="gif/bounce.gif" alt="" class="rounded-3xl">
                     <img src="gif/aiface.gif" alt="" class="rounded-3xl">
                 </div>
             </div>
         </div>
         <div class="snap-start">
-            <div class="flex justify-center pt-10 font-semibold " id="skills">
-                <div>Skills</div>
+            <div class="flex justify-center pt-10 font-semibold p-5" id="skills">
+                <div>Skills || Qualifications </div>
             </div>
 
-            <div class="space-y-2">
+
+        </div>
+        <div class="flex justify-between font-semibold">
+            <div class=" flex justify-center m-auto p-2 space-y-5">
+                <div class="hidden md:block lg:block">
+                    Skills
+                </div>
+                <div class=" flex justify-center text-center md:hidden lg:hidden">
+                    Skills
+                </div>
+            </div>
+
+            <div class=" flex justify-start m-auto p-2 space-y-5">
+                <div class="hidden md:block lg:block">
+                    Qualifications
+                </div>
+            </div>
+        </div>
+        <div class="lg:flex lg:space-x-10 lg:p-10 md:flex md:space-x-10 md:p-10 w-full ">
+            <div class="space-y-2 w-full">
                 <div class=" flex justify-start m-auto p-2 space-y-5">
                     <div>
                         HTML/CSS
@@ -214,38 +241,53 @@
                     </div>
                 </div>
             </div>
+            <div class="p-5">
+                <div class=" flex justify-center m-auto p-2 space-y-5 text-center font-semibold md:hidden lg:hidden">
+                    <div class="    ">
+                        Qualifications
+                    </div>
+                </div>
+                <div class="flex justify-center m-auto lg:block lg:text-3xl">
+                    <div>
+                        CURRENTLY PURSUING BCA AT CASET COLLEGE
+                    </div>
+                </div>
+            </div>
         </div>
+    </div>
+    </div>
+    <!-- </div> -->
 
-        <div class="snap-star">
-            <div class="flex justify-center pt-10 font-semibold m-5" id="hire">
-                <div>Contact Me </div>
-            </div>   
-
-            <div class="flex justify-center">
-                <form action="https://formspree.io/f/xgedapkd" method="post" class="text-black flex justify-center m-auto flex-col w-full
+    <div class="flex justify-center pt-10 font-semibold m-5" id="hire">
+        <div>Contact Me </div>
+    </div>
+    <div class="snap-star md:flex md:justify-around md:space-y-10 lg:flex  lg:justify-around lg:space-y-10 ">
+        <div class="flex lg:w-[50%] md:w-[50%] lg:-ml-76">
+            <form action="https://formspree.io/f/xgedapkd" method="post" class="text-black flex justify-center m-auto flex-col w-full
                   space-y-5 p-5
                 ">
-                    <input class="rounded-2xl" type="text" name="name" id="name" placeholder="Enter Your Name">
-                    <input class="rounded-2xl" type="email" name="email" id="email" placeholder="Enter Your Email">
-                    <textarea class="rounded-2xl" name="message" id="message" placeholder="Message Here" cols="30" rows="10"></textarea>
-                    <div
-                            class="text-white mt-4 border-2 flex justify-center m-auto border-cyan-500 w-20 h-10 bg-green-500 rounded-xl hover:bg-green-800 p-2">
-                            <a href="#hire"><button class="text-justify">Send</button></a>
-                        </div>
-                </form>
-            </div>
-
-            <div class="flex flex-col space-y-5 justify-center items-center p-4 mt-5    ">
-                <a href="https://www.mchopan21@gmail.com">mchopan21@gmail.com</a>
-                <a href="#">+91 7780883346</a>
-            </div>
+                <input class="rounded-2xl" type="text" name="name" id="name" placeholder="Enter Your Name">
+                <input class="rounded-2xl" type="email" name="email" id="email" placeholder="Enter Your Email">
+                <textarea class="rounded-2xl" name="message" id="message" placeholder="Message Here" cols="30"
+                    rows="10"></textarea>
+                <div
+                    class="text-white mt-4 border-2 flex justify-center m-auto border-cyan-500 w-20 h-10 bg-green-500 rounded-xl hover:bg-green-800 p-2">
+                    <a href="#hire"><button class="text-justify">Send</button></a>
+                </div>
+            </form>
         </div>
 
-        <div>
-            <footer class="text-xs flex justify-center">
-                &copy   2022 Manzoor Chopan
-            </footer>
+        <div class="flex flex-col space-y-5 justify-center items-center p-4 mt-5 lg:-mt-3 md:-mt-3 md:text-center lg:text-center md:h-96 lg:h-96 md:rounded-3xl lg:rounded-3xl md:font-semibold lg:font-semibold md:hover:bg-yellow-300 lg:hover:bg-blue-600  lg:bg-slate-900 md:bg-purple-400">
+            <a href="https://www.mchopan21@gmail.com">mchopan21@gmail.com</a>
+            <a href="#">+91 7780883346</a>
         </div>
+    </div>
+
+    <div>
+        <footer class="text-xs flex justify-center">
+            &copy 2022 Manzoor Chopan
+        </footer>
+    </div>
     </div>
 
     <script src=" https://unicons.iconscout.com/release/v4.0.0/script/monochrome/bundle.js" />
