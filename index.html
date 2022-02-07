@@ -10,6 +10,8 @@
     <!--Meta Tags End-->
 
     <!--Script-->
+                         <!-- Alpine Plugins -->
+    <script defer src="https://unpkg.com/@alpinejs/intersect@3.x.x/dist/cdn.min.js"></script>       
     <script src="//unpkg.com/alpinejs" defer></script>
     <!--Script end-->
 
@@ -25,7 +27,7 @@
     <title>Portfolio</title>
 </head>
 
-<body class="bg-[#00fe48] font-poppins text-[#000000]">
+<body class="bg-[#100c08] font-poppins text-[#fffdfd]" x-data>
     <!--Head section-->
     <header x-data="{isOpen: false}" class="fixed">
         <div class="container flex justify-between m-auto snap-start">
@@ -66,7 +68,7 @@
             <div class="container flex justify-center p-10 py-8 m-auto space-x-5">
 
                 <div
-                    class="flex flex-col mt-20 space-y-2 text-2xl transition duration-700 ease-in-out lg:text-3xl lg:p-10 lg:mt-20">
+                    class="flex flex-col mt-20 space-y-2 text-2xl duration-1000 opacity-0 lg:text-3xl lg:p-10 lg:mt-20" x-intersect="$el.classList.add('opacity-100','tracking-in-expand')">
                     <ul>
                         <li class="hover:text-[#0072b1]"><a href="https://www.linkedin.com/in/manzoor-chopan-074b14201/"><i
                                     class="uim uim-linkedin-alt"></i></a></li>
@@ -77,19 +79,19 @@
                                     class="uim uim-youtube"></i></a></li>
                     </ul>
                 </div>
-                <div class="container flex justify-center overflow-hidden w-45 h-45 bg-[#7900ff] heart m-auto md:ml-96  duration-500 hover:border-4 hover:border-blue-400">
+                <div class="container flex justify-center overflow-hidden w-45 h-45 bg-[#7900ff] heart m-auto md:ml-96 opacity-0  duration-1000 hover:border-4 hover:border-blue-400" x-intersect="$el.classList.add('opacity-100','scale-up-center')">
                     <img src="img/perfil.png" alt="" class="justify-center m-auto">
                 </div>
 
             </div>
 
-            <div class="container flex justify-center m-auto space-x-5 text-center lg:text-4xl lg:p-10 lg:m-10">
+            <div class="container flex justify-center m-auto space-x-5 text-center opacity-0 opesity lg:text-4xl lg:p-10 lg:m-10" x-intersect="$el.classList.add('opacity-100','tracking-in-expand')">
                 <div class="self-center mx-2.5 lg:">
                     <div class="">
                         Hi, I am Manzoor Chopan </br>
                         I am Designer
                     </div>
-                    <div class="flex justify-between lg:text-sm lg:mt-20">
+                    <div class="flex justify-between gap-20 pt-10 md:gap-0 lg:text-sm lg:mt-20">
                         <a href="#hire">
                         <button class="px-4 py-2 font-bold text-white bg-blue-500 rounded-full hover:bg-blue-700">
                             Hire Me
@@ -108,10 +110,10 @@
 
 
         <!--About Section-->
-        <div class="flex justify-center pt-10 font-semibold" id="about">
+        <div class="flex justify-center pt-10 font-semibold opacity-0" id="about" x-intersect="$el.classList.add('opacity-100','tracking-in-expand')">
             <div>About Me </div>
         </div>
-        <div class="snap-start md:flex lg:flex">
+        <div class="opacity-0 snap-start md:flex lg:flex" x-intersect="$el.classList.add('opacity-100','tracking-in-expand')">
             <div class="flex p-10 py-10 space-x-5">
                 <div class=""><img src="img/about.jpg" alt="" class="rounded-3xl"></div>
             </div>
