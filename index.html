@@ -8,11 +8,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#1A1A40" />
     <!--Meta Tags End-->
-    
+
     <!--Script-->
     <script src="//unpkg.com/alpinejs" defer></script>
     <!--Script end-->
-    
+
     <!--Links-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,7 +25,7 @@
     <title>Portfolio</title>
 </head>
 
-<body class="bg-[#1A1A40] font-poppins text-[#EEEEEE]">
+<body class="bg-[#00fe48] font-poppins text-[#000000]">
     <!--Head section-->
     <header x-data="{isOpen: false}" class="fixed">
         <div class="container flex justify-between m-auto snap-start">
@@ -39,17 +39,20 @@
         </div>
 
         <div class="fixed flex w-full mt-5 transition duration-700 ease-in-out sm:block lg:block ">
-            <ul class="absolute flex flex-col items-end justify-end w-full p-2 space-x-5 space-y-5" x-show="isOpen"
-                x-transition @click.away="isOpen=false">
-                <li class="p-2 bg-gray-500 rounded-2xl hover:bg-gray-700 "><a href="#"
+            <ul class="absolute flex flex-col items-end justify-end w-full p-2 space-x-5 space-y-5 " x-show="isOpen"
+                x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 scale-90"
+                x-transition:enter-end="opacity-100 scale-100" x-transition:leave="transition ease-in duration-300"
+                x-transition:leave-start="opacity-100 scale-100" x-transition:leave-end="opacity-0 scale-90"
+                @click.away="isOpen=false">
+                <li class="p-2 bg-blue-500 rounded-2xl hover:bg-blue-700 "><a href="#"
                         class="cursor-pointer animate-bounce">Home</a></li>
-                <li class="p-2 bg-gray-500 rounded-2xl hover:bg-gray-700"><a href="#about"
+                <li class="p-2 bg-blue-500 rounded-2xl hover:bg-blue-700"><a href="#about"
                         class="cursor-pointer">About</a></li>
-                <li class="p-2 bg-gray-500 rounded-2xl hover:bg-gray-700"><a href="#work" class="cursor-pointer">My
+                <li class="p-2 bg-blue-500 rounded-2xl hover:bg-blue-700"><a href="#work" class="cursor-pointer">My
                         Work</a></li>
-                <li class="p-2 bg-gray-500 rounded-2xl hover:bg-gray-700"><a href="#skills"
+                <li class="p-2 bg-blue-500 rounded-2xl hover:bg-blue-700"><a href="#skills"
                         class="cursor-pointer">Skills</a></li>
-                <li class="p-2 bg-gray-500 rounded-2xl hover:bg-gray-700"><a href="#hire" class="cursor-pointer">Hire
+                <li class="p-2 bg-blue-500 rounded-2xl hover:bg-blue-700"><a href="#hire" class="cursor-pointer">Hire
                         Me</a></li>
             </ul>
         </div>
@@ -65,16 +68,16 @@
                 <div
                     class="flex flex-col mt-20 space-y-2 text-2xl transition duration-700 ease-in-out lg:text-3xl lg:p-10 lg:mt-20">
                     <ul>
-                        <li class=""><a href="https://www.linkedin.com/in/manzoor-chopan-074b14201/"><i
+                        <li class="hover:text-[#0072b1]"><a href="https://www.linkedin.com/in/manzoor-chopan-074b14201/"><i
                                     class="uim uim-linkedin-alt"></i></a></li>
-                        <li class=""><a href="https://github.com/mchopan"><i class="uim uim-github-alt"></i></a></li>
-                        <li class=""><a href="https://www.instagram.com/mchopan88"><i
+                        <li class="hover:text-[#ffffff]"><a href="https://github.com/mchopan"><i class="uim uim-github-alt"></i></a></li>
+                        <li class="hover:text-[#833AB4]"><a href="https://www.instagram.com/mchopan88"><i
                                     class="uim uim-instagram-alt"></i></a></li>
-                        <li class=""><a href="https://www.youtube.com/channel/UC6fUeU5HI4O7m_sHFrmG0pg/featured"><i
+                        <li class="hover:text-[#FF0000]"><a href="https://www.youtube.com/channel/UC6fUeU5HI4O7m_sHFrmG0pg/featured"><i
                                     class="uim uim-youtube"></i></a></li>
                     </ul>
                 </div>
-                <div class="container flex justify-center overflow-hidden w-45 h-45 bg-[#7900FF] heart m-auto md:ml-96">
+                <div class="container flex justify-center overflow-hidden w-45 h-45 bg-[#7900ff] heart m-auto md:ml-96  duration-500 hover:border-4 hover:border-blue-400">
                     <img src="img/perfil.png" alt="" class="justify-center m-auto">
                 </div>
 
@@ -87,15 +90,16 @@
                         I am Designer
                     </div>
                     <div class="flex justify-between lg:text-sm lg:mt-20">
-                        <div
-                            class="flex justify-center w-20 h-10 p-2 m-auto mt-4 bg-green-500 border-2 border-cyan-500 rounded-xl hover:bg-green-800">
-                            <a href="#hire"><button class="text-justify">Hire Me</button></a>
-                        </div>
-                        <div
-                            class="flex justify-center w-20 h-10 p-2 m-auto mt-4 bg-green-500 border-2 border-cyan-500 rounded-xl hover:bg-green-800">
-                            <a href="pdf/MAnzoor_Cv.pdf" download="pdf/MAnzoor_Cv.pdf"><button
-                                    class="text-justify">Resume</button></a>
-                        </div>
+                        <a href="#hire">
+                        <button class="px-4 py-2 font-bold text-white bg-blue-500 rounded-full hover:bg-blue-700">
+                            Hire Me
+                          </button>
+                        </a>
+                        <a href="/pdf/MAnzoor_Cv.pdf">
+                          <button class="px-4 py-2 font-bold text-white bg-blue-500 rounded-full hover:bg-blue-700">
+                            Resume
+                          </button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -279,18 +283,19 @@
     <div class="flex justify-center pt-10 m-5 font-semibold" id="hire">
         <div>Contact Me </div>
     </div>
-    
+
     <div class="snap-star md:flex md:justify-around md:space-y-10 lg:flex lg:justify-around lg:space-y-10 ">
         <div class="flex lg:w-[50%] md:w-[50%] lg:-ml-76">
             <form action="https://formspree.io/f/xgedapkd" method="post"
                 class="flex flex-col justify-center w-full p-5 m-auto space-y-5 text-black ">
-                <input class="rounded-2xl" type="text" name="name" id="name" placeholder="Enter Your Name">
-                <input class="rounded-2xl" type="email" name="email" id="email" placeholder="Enter Your Email">
+                <input class="rounded-2xl" type="text" name="name" id="name" placeholder="Enter Your Name" required>
+                <input class="rounded-2xl" type="email" name="email" id="email" placeholder="Enter Your Email" required>
                 <textarea class="rounded-2xl" name="message" id="message" placeholder="Message Here" cols="30"
-                    rows="10"></textarea>
-                <div
-                    class="flex justify-center w-20 h-10 p-2 m-auto mt-4 text-white bg-green-500 border-2 border-cyan-500 rounded-xl hover:bg-green-800">
-                    <a href="#hire"><button class="text-justify">Send</button></a>
+                    rows="10" required></textarea>
+                <div class="flex justify-center">
+                    <button class="px-4 py-2 font-bold text-white bg-blue-500 rounded-full hover:bg-blue-700">
+                        SEND
+                      </button>
                 </div>
             </form>
         </div>
@@ -301,7 +306,7 @@
             <a href="#">+91 7780883346</a>
         </div>
     </div>
-    <!--End ofContact Section-->
+    <!--End of Contact Section-->
 
     <!--Footer Section-->
     <div>
@@ -312,9 +317,11 @@
     <!--End of footer section-->
 
     <!--Script section-->
-    <script src=" https://unicons.iconscout.com/release/v4.0.0/script/monochrome/bundle.js" /></script>
+    <script src=" https://unicons.iconscout.com/release/v4.0.0/script/monochrome/bundle.js" />
+    </script>
     <script src="https://unpkg.com/@themesberg/flowbite@1.3.0/dist/flowbite.bundle.js"></script>
     <!--End of Script Section-->
-    
+
 </body>
+
 </html>
